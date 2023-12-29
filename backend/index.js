@@ -9,7 +9,7 @@ app.use(express.json());
 
 
 const mongoString =
-    process.env.MONGO_URL ||  `localhost:${process.env.PORT}`;
+    process.env.MONGO_URL ||  `localhost:${process.env.PORT}`   ||   'https://codecrafters-td9j.onrender.com/';
 
     mongoose.connect(mongoString);
     const database = mongoose.connection
