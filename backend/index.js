@@ -11,7 +11,7 @@ app.use(cors())
 
 
 var corsOptions = {
-  origin: 'https://codecrafters-td9j.onrender.com/',
+  origin: '*',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
