@@ -1,12 +1,19 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require("dotenv");
+var cors = require('cors');
 
 dotenv.config();
 const app = express();
 
 app.use(express.json());
+app.use(cors())
 
+
+var corsOptions = {
+  origin: 'https://codecrafters-td9j.onrender.com/',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
 const mongoString =
     process.env.MONGO_URL ||  `localhost:${process.env.PORT}`   ||   'https://codecrafters-td9j.onrender.com/';
@@ -36,7 +43,7 @@ const productSchema = new mongoose.Schema({
   /* api anger vilket namn som kommer finnas i mongoDB Atlas, under cluster */
   const productModel = mongoose.model('productSchema', productSchema)
   
-  app.get('/', async (req, res) => {
+  app.get('/', cors(corsOptions), async (req, res) => {
     try {
       // Hämta alla dokument från databasen
       const response = await productModel.find();
