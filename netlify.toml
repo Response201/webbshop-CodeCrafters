@@ -1,4 +1,10 @@
 [[redirects]]
- 
-command = "npm run build"
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  command = "CI= npm run build"
 
+  [[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
