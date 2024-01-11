@@ -1,5 +1,5 @@
 
-import { oneProduct } from '/productPage/oneProduct';
+import { oneProduct } from '../productPage/oneProduct';
 import { Product } from "../models/product";
 import productsfromjson from "../data/products.json";
 
