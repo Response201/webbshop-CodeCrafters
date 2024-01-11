@@ -4,4 +4,4 @@
 
 
     [[plugins]]
-  package = "/plugins/sass"
+  package = "/devDependencies/sass"
