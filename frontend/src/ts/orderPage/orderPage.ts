@@ -1,14 +1,4 @@
 import { Order } from "../models/order";
-import { Product } from "../models/product";
-
-
-
-
-
-
-
-
-
 
 
 
@@ -219,7 +209,7 @@ for(const element of uniqueArray){
     
     const quantity = document.createElement('td')
     quantity.classList.add('orderDetailsTable___quantity')
-    quantity.innerHTML = amount.length
+    quantity.innerHTML =`${amount.length}`
 
 
     
