@@ -7,7 +7,7 @@
     "skipLibCheck": true,
 
     "target": "esnext",
-
+    "module": "esnext",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
