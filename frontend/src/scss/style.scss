@@ -1,0 +1,26 @@
+@use "/src/scss/aboutPage/containersAbout";
+@use "/src/scss/aboutPage/textsAbout";
+@use "/src/scss/aboutPage/imagesAbout";
+@use "allproducts";
+@use "homePage";
+@use "productpage";
+@use "/src/scss/basketPage/containersBasket";
+@use "/src/scss/basketPage/textsBasket";
+@use "/src/scss/basketPage/buttonsBasket";
+@use "orderpage";
+@use "_contact";
+
+.body {
+  margin: 0;
+  font-family: Verdana Tahoma, serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

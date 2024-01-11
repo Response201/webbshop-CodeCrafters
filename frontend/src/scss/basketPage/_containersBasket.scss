@@ -1,0 +1,136 @@
+@use "/src/scss/variables" as v;
+@use "/src/scss/mixins";
+
+#basketPage {
+  position: fixed;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+}
+
+#container--basket {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: v.$primary-backgroundcolor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1001;
+}
+
+.container--basketArticles {
+  position: relative;
+  width: 90%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.container--basketOneProduct {
+  width: 100%;
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  gap: 10px;
+}
+
+.container--basketImage {
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container--openProductText {
+  padding-bottom: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+#container--basketTotalSum {
+  width: 90%;
+  height: 50px;
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--buttonAndPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--titleAndXmark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--productQuantityIndividualPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.container--addOrRemoveButtons {
+  display: flex;
+  width: 30%;
+}
+
+.container--basketEmpty {
+  margin-top: 0px;
+}
+
+#basketPage {
+  @include mixins.devices(tablet) {
+    max-width: 60%;
+    right: 0;
+    .container--basketOneProduct {
+      width: 100%;
+      height: 150px;
+    }
+    .container--basketImage {
+      height: 120px;
+      width: 120px;
+    }
+    .img {
+      width: 100px;
+    }
+    .container--openProductText {
+      gap: 10px;
+    }
+    .container--addOrRemoveButtons {
+      gap: 5px;
+    }
+    #container--basketTotalSum {
+      height: 80px;
+    }
+    #container--basket {
+      box-shadow: 0px 100px 200px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+#basketPage {
+  @include mixins.devices(desktop) {
+    max-width: 40%;
+  }
+}

@@ -1,0 +1,64 @@
+@use "/src/scss/mixins";
+
+.basketProductTitle {
+  font-weight: 600;
+  font-size: 1.07rem;
+  margin: 0%;
+}
+
+.oneProductPrice {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.productQuantityText {
+  margin: 0%;
+}
+
+.totalText {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.totalSumma {
+  margin-right: 10px;
+}
+
+.indiviualPrice {
+  margin-right: 10px;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+#pageTitleArticles {
+  padding-top: 30px;
+}
+
+#basketPage {
+  @include mixins.devices(tablet) {
+    .basketProductTitle {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .oneProductPrice {
+      font-size: 1.4rem;
+    }
+    .productQuantityText,
+    .productQuantityNumber {
+      font-size: 1.2rem;
+    }
+    .indiviualPrice {
+      font-size: 1rem;
+    }
+    .totalText {
+      font-size: 1.5rem;
+    }
+    .totalSumma {
+      font-size: 1.5rem;
+    }
+    .basketEmptyText {
+      font-size: 1.3rem;
+    }
+  }
+}

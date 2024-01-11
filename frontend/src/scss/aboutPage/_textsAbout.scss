@@ -1,0 +1,131 @@
+@use "/src/scss/variables" as v;
+@use "/src/scss/mixins";
+
+.pageTitle {
+  margin: 50px 15px 20px 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: v.$secondary-color;
+  letter-spacing: 0.07rem;
+  line-height: 1.1rem;
+}
+
+#introductionTitle {
+  font-size: 1.1rem;
+  text-align: right;
+  width: 85%;
+}
+
+#introductionText {
+  text-align: right;
+  width: 85%;
+  font-size: 0.9rem;
+}
+
+.smallText__thin {
+  margin: 0px 15px 0px 15px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: v.$secondary-color;
+  line-height: 1.1rem;
+}
+
+.smallText__bold {
+  margin: 20px 15px 0px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: v.$secondary-color;
+  line-height: 1.1rem;
+}
+
+#supriseElementTitle,
+#supriseElementText {
+  text-align: right;
+  width: 80%;
+}
+
+.howItWorksList {
+  padding-left: 15px;
+  padding-bottom: 45px;
+}
+
+#aboutPage {
+  @include mixins.devices(tablet) {
+    .pageTitle {
+      font-size: 1rem;
+      margin-top: 30px;
+    }
+
+    #introductionTitle {
+      font-size: 1.1rem;
+      width: 40%;
+      text-align: left;
+    }
+
+    #introductionText {
+      font-size: 0.96rem;
+      width: 40%;
+      text-align: left;
+    }
+
+    .smallText__thin,
+    .smallText__bold {
+      font-size: 0.9rem;
+    }
+
+    #supriseElementTitle,
+    #supriseElementText,
+    .container--selectFlavor,
+    .container--howIt {
+      width: 66%;
+    }
+
+    .subscription--content {
+      position: absolute;
+      width: 46%;
+      transform: translateY(-105%);
+    }
+  }
+}
+
+#aboutPage {
+  @include mixins.devices(desktop) {
+    .pageTitle {
+      font-size: 1.6rem;
+      margin-top: 30px;
+    }
+
+    #introductionTitle {
+      font-size: 1.8rem;
+      width: 40%;
+      text-align: left;
+      line-height: 1.9rem;
+    }
+
+    #introductionText {
+      font-size: 1.4rem;
+      width: 45%;
+      text-align: left;
+      line-height: 1.8rem;
+    }
+
+    .smallText__thin,
+    .smallText__bold {
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+
+    #supriseElementTitle,
+    #supriseElementText,
+    .container--selectFlavor,
+    .container--howIt {
+      width: 45%;
+    }
+
+    .subscription--content {
+      position: absolute;
+      width: 45%;
+      transform: translateY(-105%);
+    }
+  }
+}

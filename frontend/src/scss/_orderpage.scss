@@ -1,0 +1,210 @@
+@use 'variables' as v;
+
+body {
+  position: relative;
+}
+
+.background {
+ 
+  
+  overflow-x: hidden;
+
+}
+
+.emoijisContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  top: 0%;
+  z-index: -1;
+}
+
+.containerPage {
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.orderContainer {
+  height: fit-content;
+  height: -moz-fit-content;
+  width: 95%;
+  max-width: 500px;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: v.$septenary-color;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 50px 0;
+  
+}
+
+.buyerInfo {
+  height: fit-content;
+  height: -moz-fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &___name,
+  &___street,
+  &___postcodeCounty,
+  &___deliveryaddress,
+  &___text {
+    justify-self: center;
+    margin: 0 5px;
+    padding: 0px 15px;
+    font-size: clamp(11px, 1vw, 15px);
+    word-spacing: 4px;
+  }
+
+  &___text {
+    margin: 0 0 20px 0;
+    font-size: clamp(13px, 1vw, 17px);
+  }
+
+  &___deliveryaddress {
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: clamp(13px, 1vw, 17px);
+  }
+}
+
+.orderDetailsContainer {
+  height: fit-content;
+  height: -moz-fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  &___orderDetailsText,
+  .orderDetailsTable {
+    justify-self: center;
+    margin: 0 5px;
+    padding: 0px 15px;
+    font-size: clamp(13px, 1vw, 17px);
+    word-spacing: 4px;
+    white-space: nowrap;
+  }
+
+  &___orderDetailsText {
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+
+  .orderDetailsTable {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    tr {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    td,
+    th {
+      display: flex;
+      width: 30%;
+    }
+
+    th {
+      text-decoration: underline;
+      font-weight: 400;
+      font-size: clamp(13px, 1vw, 17px);
+    }
+
+    td {
+      font-size: clamp(11px, 1vw, 15px);
+
+      &___titel {
+        justify-self: center;
+      }
+    }
+  }
+}
+
+.totalPriceContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  margin: 35px 5px 0px 5px;
+  padding: 0px 15px;
+  word-spacing: 4px;
+
+  &___totalPrice,
+  &___momsPrice {
+    padding: 0px 15px;
+    margin: 0;
+    font-size: clamp(13px, 1vw, 17px);
+    word-spacing: 4px;
+  }
+  &___momsPrice {
+    font-size: clamp(10px, 1vw, 12px);
+  }
+}
+
+/* Styling för emoji-regn */
+
+@for $i from 0 through 32 {
+  @keyframes fall-#{$i} {
+    0% {
+      transform: translate3d((random(100) * 1vw), -85vh, (random(100) * 5px));
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    95% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate3d((random(100) * 1vw), (random(1) * 1vh + 100vh), (random(100) * 5px));
+      opacity: 0;
+    }
+  }
+
+  .emoji:nth-child(#{$i}) {
+    position: absolute;
+    animation: fall-#{$i} 15s linear;
+    animation-delay: -$i * 0.2s;
+    font-size: clamp(25px, 5vw, 60px);
+    
+    opacity: 0;
+  }
+}
+
+@keyframes fall {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 1vh, 0);
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 50vh, 0);
+    opacity: 0;
+  }
+}

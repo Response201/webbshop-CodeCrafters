@@ -1,0 +1,233 @@
+@use "mixins";
+@use "variables" as v;
+
+
+
+.productPageContainer {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+ padding-top: 13vh;
+
+  .selectedProduct {
+    height: 100%;
+    min-height: fit-content;
+    min-height: -moz-fit-content;
+    width: 80%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mixins.devices(tablet) {
+      width: 100%;
+    }
+
+    &___titel {
+      margin-bottom: 3vh;
+    }
+  }
+
+  .imgAndDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 98%;
+    max-width: 1500px;
+    padding: 1%;
+    overflow: hidden;
+
+    @include mixins.devices(tablet) {
+      flex-direction: row;
+      align-items: start;
+    }
+
+    &___description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin-top: 2vh;
+
+      @include mixins.devices(tablet) {
+        width: 50%;
+        margin-top: 0vh;
+      }
+
+      &___p {
+        font-size: clamp(15px, 2vw, 20px);
+        line-height: 120%;
+        width: 90%;
+      }
+    }
+
+    &___price {
+      width: 80%;
+      max-width: 1500px;
+      text-align: end;
+      font-weight: 700;
+    }
+
+    &___buttonsContainer {
+      display: flex;
+      width: fit-content;
+      width: -moz-fit-content;
+
+      &___button {
+        align-self: center;
+        height: 3.5vh;
+        min-height: 35px;
+        width: 100%;
+        min-width: 100px;
+        max-width: 170px;
+        background-color: v.$septenary-color;
+        border: 1px solid v.$octonary-color;
+        margin-top: 2vh;
+        padding: 0 10px;
+        border-radius: 15px;
+        font-size: clamp(15px, 2vw, 17px);
+
+        &:hover {
+          background-color: v.$octonary-color;
+          border: 1px solid v.$septenary-color;
+        }
+      }
+
+      &___buttonReadMore {
+        display: none;
+        align-self: center;
+        height: 2vh;
+        min-height: 30px;
+        width: 100%;
+        max-width: 170px;
+        min-width: none;
+        background-color: v.$septenary-color;
+        border: 1px solid v.$octonary-color;
+        margin-top: 2vh;
+        border-radius: 15px;
+        font-size: clamp(12px, 2vw, 17px);
+
+        &:hover {
+          background-color: v.$octonary-color;
+          border: 1px solid v.$septenary-color;
+        }
+      }
+    }
+
+    i {
+      margin-left: 10px;
+    }
+
+    &___imgContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include mixins.devices(tablet) {
+        width: 60%;
+      }
+
+      &___img {
+        object-fit: cover;
+        width: 98%;
+        max-width: 500px;
+        aspect-ratio: 1/1;
+        border: 2px solid v.$octonary-color;
+        border-radius: 10px;
+
+        @include mixins.devices(tablet) {
+          max-height: 400px;
+        }
+      }
+    }
+  }
+}
+
+/* "rest" of products, not the selected */
+.productContainer {
+  width: 90%;
+  max-width: 1500px;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  height: -moz-fit-content;
+  flex-direction: column;
+
+  @include mixins.devices(tablet) {
+    flex-direction: row;
+    max-height: 400px;
+  }
+}
+
+.manyProducts {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+
+  .imgAndDescription___description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 90%;
+
+    .selectedProduct___titel {
+      margin: 0;
+      padding: 0;
+    }
+
+    .selectedProduct___titel {
+      font-size: clamp(16px, 2vw, 18px);
+    }
+
+    .imgAndDescription___buttonsContainer___button {
+      min-height: 20px;
+      height: 2.5vh;
+      min-width: 80px;
+      width: fit-content;
+      font-size: clamp(11px, 1vw, 13px);
+      padding: 0 7px;
+      margin: 0 0 0 15px;
+      width: -moz-fit-content;
+    }
+
+    i {
+      font-size: 10px;
+    }
+  }
+
+  .imgAndDescription {
+    &___imgContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.7s;
+
+      &:hover {
+        transform: scale(95%);
+      }
+
+      @include mixins.devices(tablet) {
+        width: 60%;
+      }
+
+      @include mixins.devices(desktop) {
+        width: 40%;
+      }
+    }
+  }
+}

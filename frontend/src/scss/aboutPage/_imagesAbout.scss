@@ -1,0 +1,51 @@
+@use "/src/scss/mixins";
+
+.introductionImage {
+  width: 84%;
+  margin-top: 25px;
+}
+
+.introductionImage img {
+  max-width: 100%;
+}
+
+.subscriptionImage {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.subscriptionImage img {
+  max-width: 100%;
+}
+
+#aboutPage {
+  @include mixins.devices(tablet) {
+    .introductionImage {
+      width: 50%;
+      margin-top: 30px;
+    }
+
+    .subscriptionImage {
+      padding-top: 35px;
+      height: 340px;
+      overflow: hidden;
+    }
+
+    .subscriptionImage img {
+      transform: translatey(-20%);
+    }
+  }
+}
+
+#aboutPage {
+  @include mixins.devices(desktop) {
+    .introductionImage {
+      width: 460px;
+      margin-top: 30px;
+    }
+
+    .subscriptionImage img {
+      transform: translatey(-35%);
+    }
+  }
+}

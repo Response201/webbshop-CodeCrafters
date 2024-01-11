@@ -1,0 +1,70 @@
+@use "/src/scss/mixins";
+
+.minusButton {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin: 0%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plusButton {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeOrCheckoutButtons {
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#checkoutButton {
+  height: 35px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#closeButton {
+  height: 35px;
+  width: 80px;
+}
+
+.oneProduct--xmark {
+  top: 0px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+#basketPage {
+  @include mixins.devices(tablet) {
+    .oneProduct--xmark {
+      font-size: 1.4rem;
+    }
+    #closeButton,
+    #checkoutButton {
+      height: 60px;
+      width: 130px;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+}

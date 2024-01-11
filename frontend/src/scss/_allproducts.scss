@@ -1,0 +1,107 @@
+@use "mixins";
+@use "variables" as v;
+
+.productContainerAllProducts {
+  padding-top: 10vh;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  max-width: none;
+  gap: 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  justify-content: space-around;
+  align-items: center;
+
+  .imgAndDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    width: 98%;
+    max-width: 1500px;
+    padding: 1%;
+    overflow: hidden;
+
+    &___buttonsContainer {
+      display: flex;
+      flex-direction: row;
+      height: 30px;
+
+      &___button,
+      &___buttonReadMore {
+        height: 30px;
+        width: 100%;
+        max-width: fit-content;
+        max-width: -moz-fit-content;
+        background-color: v.$septenary-color;
+        border-radius: 10px;
+        font-size: clamp(13px, 2vw, 14px);
+        border: 1px solid v.$octonary-color;
+        padding: 2px 15px;
+
+        &:hover {
+          background-color: v.$octonary-color;
+          border: 1px solid v.$septenary-color;
+        }
+      }
+
+      &___button {
+        margin-left: 15px;
+      }
+
+      &___buttonReadMore {
+        display: inline;
+        height: 30px;
+      }
+    }
+
+    i {
+      padding: 0;
+      margin: 0;
+      font-size: 10px;
+    }
+
+    &___description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin-top: 2vh;
+      overflow: hidden;
+    }
+
+    &___description p:nth-child(2),
+    p:nth-child(3) {
+      display: none;
+    }
+
+    &___price {
+      width: 80%;
+      text-align: end;
+      font-weight: 700;
+    }
+
+    &___imgContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.7s;
+
+      &:hover {
+        transform: scale(95%);
+      }
+
+      &___img {
+        object-fit: cover;
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 1/1;
+        border: 2px solid v.$octonary-color;
+        border-radius: 10px;
+      }
+    }
+  }
+}

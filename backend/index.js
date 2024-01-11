@@ -35,7 +35,8 @@ const port =  3000;
 const productSchema = new mongoose.Schema({
     titel:{type:String},
     image:{type:String},
-    price:{type:Number}
+    price:{type:Number},
+    description:{type:Array}
     
     })
   
