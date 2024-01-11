@@ -1,7 +1,5 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+ 
 command = "npm ci && npm run build"
 
   [[headers]]
