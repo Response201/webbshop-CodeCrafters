@@ -6,7 +6,7 @@ export const getProducts = async () => {
 
   const Array: Product[] = [];
   try {
-    const { data } = await axios.get<Product[]>(`https://codecrafters-td9j.onrender.com`, {
+    const { data } = await axios.get<Product[]>(`codecrafters-td9j.onrender.com`, {
       timeout: 5000,
     });
     if (data.length >= 3) {
