@@ -4,11 +4,11 @@
 @use "allproducts";
 @use "homePage";
 @use "productpage";
-@use "/src/scss/basketPage/containersBasket";
-@use "/src/scss/basketPage/textsBasket";
-@use "/src/scss/basketPage/buttonsBasket";
+@use "containersBasket";
+@use "textsBasket";
+@use "buttonsBasket";
 @use "orderpage";
-@use "_contact";
+@use "contact";
 
 .body {
   margin: 0;
