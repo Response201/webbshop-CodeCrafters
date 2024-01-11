@@ -4,11 +4,6 @@
   status = 200
   command = "CI= npm run build"
 
-  [[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-
 
     [[plugins]]
   package = "/plugins/sass"
