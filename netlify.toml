@@ -3,7 +3,6 @@
   to = "/index.html"
   status = 200
 command = "npm ci && npm run build"
- publish = "frontend"
 
   [[headers]]
   for = "/*"
