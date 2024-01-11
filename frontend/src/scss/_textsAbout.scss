@@ -1,5 +1,5 @@
-@use "/src/scss/variables" as v;
-@use "/src/scss/mixins";
+@use "variables" as v;
+@use "mixins";
 
 .pageTitle {
   margin: 50px 15px 20px 15px;
