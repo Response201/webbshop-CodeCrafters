@@ -11,11 +11,11 @@ export const getProductsFromLocalStorage = (): Product[] => {
 
 const groupProductsById = (products: Product[]): { [id: string]: Product } => {
   return products.reduce((result, product) => {
-    const { _id, titel, image, price } = product;
+    const { _id, titel, image, price,description } = product;
 
     if (!result[_id]) {
       // Skapar en grupperad produkt om det inte finns en med det givna ID:t.
-      result[_id] = { _id, titel, image, price, amount: 1 };
+      result[_id] = { _id, titel, image, price, amount: 1, description };
     } else {
       // Ökar antalet om en produkt med samma ID redan finns.
       result[_id].amount++;
@@ -25,7 +25,7 @@ const groupProductsById = (products: Product[]): { [id: string]: Product } => {
   }, {} as { [id: string]: Product });
 };
 
-let products: Product[] = JSON.parse(localStorage.getItem("products") || "[]");
+/* let products: Product[] = JSON.parse(localStorage.getItem("products") || "[]"); */
 
 // Funktion för att rendera grupperade produkter i DOM med ta bort-knappar.
 export const renderProductsInDOM = (products: Product[]): void => {

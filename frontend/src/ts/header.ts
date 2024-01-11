@@ -1,4 +1,4 @@
-import { fa2, faRainbow } from "@fortawesome/free-solid-svg-icons"
+
 
 
 

@@ -1,3 +1,5 @@
+import { Product } from "../models/product";
+
 
 
 export const addProduct = (button: HTMLElement, product: Product) => {
