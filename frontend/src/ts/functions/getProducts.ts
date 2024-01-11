@@ -35,7 +35,7 @@ export const getProducts = async () => {
     }
   }
 
+ return JSON.stringify(Array)
 
 
-  return Array;
 };
