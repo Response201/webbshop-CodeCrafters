@@ -8,3 +8,7 @@
   for = "/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
+
+
+    [[plugins]]
+  package = "/plugins/sass"
