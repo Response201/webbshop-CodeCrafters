@@ -2,7 +2,7 @@
   "name": "webshop-template",
   "private": true,
   "version": "0.0.0",
-  "type": "text/javascript",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build":  "mkdir -p ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc && vite build",
