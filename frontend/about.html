@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="./public/icon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/scss/style.scss" />
+
+    <link rel="stylesheet" href="/src/scss/_productpage.scss" />
+    <link rel="stylesheet" href="src/scss/_allproducts.scss" />
+    <title>Whiskends</title>
+  </head>
+
+  <body>
+    <section id="basketPage">
+      <section id="container--basket">
+        <h3 id="pageTitleArticles">Articles</h3>
+        <section class="container--basketArticles" id="basketArticles"></section>
+        <section class="container--basketEmpty">
+          <span id="basketEmpty" class="basketEmptyText"></span>
+        </section>
+        <section id="container--basketTotalSum">
+          <span class="totalText">TOTALT</span>
+          <span id="summa" class="totalSumma">0 SEK</span>
+        </section>
+        <section class="closeOrCheckoutButtons">
+          <button id="closeButton">Close</button>
+          <a id="checkoutButton" href="cart.html">Checkout</a>
+        </section>
+      </section>
+    </section>
+
+    <header class="topnav">
+      <div class="cart-icon" id="cartIcon">
+        <a id="bag">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <div class="cart-popup" id="cartPopup">
+          <p>Cart Information:</p>
+          <ul id="cartItemsList"></ul>
+          <button id="goToCartBtn">Go to Cart</button>
+        </div>
+      </div>
+
+      <section class="p-menu1">
+        <nav id="navbar" class="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+
+          <nav class="menu1">
+            <a class="link1" href="index.html">Home</a>
+            <a class="link1" href="about.html">About</a>
+            <a class="link3" href="allProducts-page.html">Products</a>
+            <a class="link3" href="contact.html">Contact</a>
+          </nav>
+        </nav>
+      </section>
+    </header>
+
+    <div id="app">
+      <section id="aboutPage">
+        <section class="container--introduction">
+          <section class="introduction--content">
+            <h3 class="pageTitle" id="introductionTitle">Welcome to Whiskends: Your Whiskey Adventure Awaits!</h3>
+            <p class="smallText__thin" id="introductionText">
+              At Whiskends, we believe that every sip of whiskey should be an unforgettable experience, and what better
+              way to elevate your whiskey journey than with our exclusive subscription service! Allow us to introduce
+              you to a world of mystery, flavor, and excitement.
+            </p>
+          </section>
+          <section class="introductionImage">
+            <img src="public/howitworksimages/pouring_standing.webp" />
+          </section>
+        </section>
+        <section class="container--subscriptions">
+          <section class="subscription--content">
+            <h3 class="pageTitle" id="subscriptionTitle">Choose your subscription level</h3>
+            <section>
+              <p class="smallText__bold">Basic:</p>
+              <p class="smallText__thin" id="introduction--text__small">
+                Embark on your whiskey exploration with our basic subscription. Perfect for those who enjoy the thrill
+                of surprises!
+              </p>
+            </section>
+            <section>
+              <p class="smallText__bold">Premium:</p>
+              <p class="smallText__thin" id="introduction--text__small">
+                Elevate your palate with premium whiskey selections. A curated experience for the true whiskey
+                enthusiast who appreciates the finer things in life.
+              </p>
+            </section>
+            <section>
+              <p class="smallText__bold">Collectors:</p>
+              <p class="smallText__thin" id="introduction--text__small">
+                Indulge in the epitome of luxury. Our Collectors subscription is a connoisseur's dream, featuring rare
+                and exquisite whiskey bottles carefully selected for the most discerning taste buds.
+              </p>
+            </section>
+          </section>
+          <section class="subscriptionImage">
+            <img src="public/howitworksimages/pouring_wide.webp" />
+          </section>
+        </section>
+        <section class="container--howItWorks">
+          <section class="howItWorks--content">
+            <section class="container--selectFlavor">
+              <h3 class="pageTitle" id="selectFlavorTitle">Select your adventure</h3>
+              <p class="smallText__thin" id="selectFlavorText">
+                Now, here's where the excitement truly begins! Within each subscription level, you have the power to
+                customize your experience by choosing from our extensive array of eight different flavor profiles. From
+                smoky and peaty to fruity and floral, the choice is yours.
+              </p>
+            </section>
+            <section class="container--supriseElement">
+              <h3 class="pageTitle" id="supriseElementTitle">The element of suprise</h3>
+              <p class="smallText__thin" id="supriseElementText">
+                While you have control over the flavor profile, the exact brand and product remain a mystery until the
+                moment you unwrap your carefully curated package. We believe in the joy of discovery, and with
+                Whiskends, each delivery is a delightful surprise waiting to unfold.
+              </p>
+            </section>
+            <section class="container--howIt">
+              <h3 class="pageTitle" id="howItWorksTitle">How it works</h3>
+              <ul class="howItWorksList">
+                <li class="smallText__thin">
+                  <b>Choose Your Subscription Level:</b> Select from Basic, Premium, or Collectors.
+                </li>
+                <li class="smallText__thin">
+                  <b>Pick Your Flavors:</b> Customize your subscription by choosing up to eight flavors that match your
+                  whiskey preferences.
+                </li>
+                <li class="smallText__thin">
+                  <b>Await the Unveiling:</b> Your curated selection of whiskey bottles will be discreetly packaged and
+                  delivered to your doorstep. Unwrap the mystery and savor the surprise!
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+    </div>
+
+    <script type="module" src="/src/ts/eventlisteners/addProductsBasket.ts"></script>
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>
