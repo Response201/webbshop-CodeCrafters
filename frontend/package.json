@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": " sass src/styles/style.scss public/styles/style.css &&tsc && vite build",
+    "build":  "sass src/scss/style.scss public/scss/style.css && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
