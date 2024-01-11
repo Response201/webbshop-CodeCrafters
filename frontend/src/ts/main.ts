@@ -10,10 +10,10 @@ const main = async () => {
 
 const show  = localStorage.getItem("show");
 if(!show){
-  $(document).ready(function () {
-    $("#myModal").modal("show");
-  });
-}
+  const myModal = document.querySelector<HTMLElement>('#myModal')
+   myModal?.classList.add('show')
+  };
+
 
 
 const yesBtnModal = document.querySelector<HTMLElement>('#modal-yesButton')
