@@ -6,7 +6,7 @@ export const getProducts = async () => {
   const url: string = import.meta.env.VITE_URL;
   const Array: Product[] = [];
   try {
-    const { data } = await axios.get<Product[]>(`codecrafters-td9j.onrender.com`, {
+    const { data } = await axios.get<Product[]>(`${url}`, {
       timeout: 500,
     });
     if (data.length >= 3) {

@@ -1,4 +1,4 @@
-let getProducts  = require('../functions/getProducts');
+import { getProducts } from '../functions/getProducts';
 import { oneProduct } from '../productPage/oneProduct';
 import { Product } from "../models/product";
 
