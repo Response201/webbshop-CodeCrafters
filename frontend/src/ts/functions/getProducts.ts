@@ -12,7 +12,7 @@ export const getProducts = async () => {
     
     if (data.length >= 3) {
     
-      body: JSON.stringify(data)
+     
       data.forEach((item) => {
         Array.push(item);
       });
@@ -35,7 +35,7 @@ export const getProducts = async () => {
     }
   }
 
- return JSON.stringify(Array)
+ return Array
 
 
 };
