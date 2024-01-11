@@ -6,6 +6,10 @@ export const allProducts = async() => {
  
      const productArray = await getProducts()
     
+
+console.log(productArray)
+
+
     if(productArray){
         const productContainer = document.createElement('section')
         productContainer.id = 'productPage'
