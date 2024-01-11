@@ -10,7 +10,5 @@ export default defineConfig({
     // Ange formatet för JavaScript-moduler
     target: 'esnext',
 
-    // Aktivera minifiering för produktion
-    minify: 'terser',
   },
 });
