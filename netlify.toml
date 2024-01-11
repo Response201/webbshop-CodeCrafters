@@ -3,5 +3,3 @@
   command = "npm run build"
 
 
-    [[plugins]]
-  package = "/devDependencies/sass"
