@@ -1,6 +1,6 @@
 [[redirects]]
  
-command = "npm ci && npm run build"
+command = " CI= npm run build && npm run build"
 
   [[headers]]
   for = "/*"
