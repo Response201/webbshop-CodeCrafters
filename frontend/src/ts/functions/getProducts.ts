@@ -3,7 +3,7 @@ import { Product } from "../models/product";
 import productsfromjson from "../data/products.json";
 
 export const getProducts = async () => {
-  const url: string = import.meta.env.VITE_URL;
+
   const Array: Product[] = [];
   try {
     const { data } = await axios.get<Product[]>(`https://codecrafters-td9j.onrender.com`, {
