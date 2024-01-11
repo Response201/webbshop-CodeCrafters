@@ -53,6 +53,7 @@ const productSchema = new mongoose.Schema({
       // Skicka tillbaka responsen som JSON om det finns några dokument
       if (response.length > 0) {
         res.json(response);
+        res.send(response)
       } else {
         res.status(404).json({ message: 'Inga produkter hittades.' });
       }
