@@ -8,8 +8,11 @@ export const getProducts = async () => {
   try {
     const { data } = await axios.get<Product[]>(`codecrafters-td9j.onrender.com`, {
       timeout: 5000,
-    });
+    })
+    
     if (data.length >= 3) {
+    
+      body: JSON.stringify(data)
       data.forEach((item) => {
         Array.push(item);
       });
