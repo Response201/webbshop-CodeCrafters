@@ -18,4 +18,9 @@ base = "/"
   to = "/about.html"
   status = 200
 
+  [[redirects]]
+  from = "/allProducts-page"
+  to = "/allProducts-page.html"
+  status = 200
+
   
