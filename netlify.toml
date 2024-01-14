@@ -7,17 +7,13 @@ publish = "frontend/public"
       Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "index"
+  from = "/index"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "about"
+  from = "/about"
   to = "/about.html"
   status = 200
 
-[[redirects]]
-  from = "allProducts-page.html"
-  to = "/allProducts-page.html"
-  status = 200
   
