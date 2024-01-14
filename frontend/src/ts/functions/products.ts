@@ -1,6 +1,4 @@
-import { Product } from "../models/product";
-
-export const productsfromjson: Product[] = [ {
+export const productsfromjson: [] = [ {
     "_id": "658c0822982493ac38e5094f",
     "titel": "Basic",
     "image": "https://i.ibb.co/6bfc4bz/elsakaisa-close-up-eye-level-a-whiskey-with-orange-garnish-on-a-65febc51-13ab-41d1-b2d9-cfaf6fde748c.png",
