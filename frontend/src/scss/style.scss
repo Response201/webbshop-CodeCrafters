@@ -1,4 +1,4 @@
-@use "containersAbout";
+
 @use "textsAbout";
 @use "imagesAbout";
 @use "allproducts";
@@ -9,6 +9,7 @@
 @use "buttonsBasket";
 @use "orderpage";
 @use "contact";
+@use "containersAbout";
 
 .body {
   margin: 0;
