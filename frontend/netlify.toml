@@ -1,0 +1,29 @@
+
+[build]
+  command = "npm run build"
+publish = "public"
+
+
+
+
+[[redirects]]
+  from = "/index"
+  to = "*/index.html"
+  status = 200
+
+[[redirects]]
+  from = "*/about"
+  to = "*/about.html"
+  status = 200
+
+  [[redirects]]
+  from = "*/allProducts-page"
+  to = "*/allProducts-page.html"
+  status = 200
+
+   [[redirects]]
+  from = "/contact"
+  to = "*/contact.html"
+  status = 200
+
+  
