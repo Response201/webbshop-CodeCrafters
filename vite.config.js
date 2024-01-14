@@ -5,13 +5,13 @@ export default defineConfig({
 
   build: {
     // Ange output-mappen för byggresultaten
-    outDir: 'frontend/dist',
+    outDir: 'dist',
 
     // Ange formatet för JavaScript-moduler
     target: 'esnext',
 
     
-      base: './'
+    /*   base: './' */
     
 
   },
