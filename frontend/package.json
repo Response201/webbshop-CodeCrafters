@@ -6,10 +6,10 @@
   
   "scripts": {
     "dev": "vite",
-/*     "build":  "mkdir -p ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc && vite build",
- */    "preview": "vite preview",
- "prepare": "mkdir -p ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc",
-  "build": "vite build"
+    "prepare": "mkdir -p ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc",
+    "build": "vite build",
+   "preview": "vite preview"
+
     
   },
   "devDependencies": {
