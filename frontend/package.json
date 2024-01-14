@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "mkdir -p ./frontend/src/scss/ && touch ./frontend/src/scss/style.css && sass ./frontend/src/scss/style.scss ./frontend/src/scss/style.css && tsc && vite build",
+    "build": "mkdir -p ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -16,4 +16,5 @@
   "dependencies": {
     "axios": "^1.6.3"
   }
-}
+}/* 
+"build":  "mkdir -p ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc && vite build */
