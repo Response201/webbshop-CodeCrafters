@@ -37,7 +37,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html', // Huvud-HTML-fil
-        about: 'about.html', // Lägg till andra HTML-filer här
+        about: 'about.html',
+        contact: 'contact.html',
+        allProductspage: 'allProductspage.html',
+        cart: 'cart.html' // Lägg till andra HTML-filer här
       }
   }
 

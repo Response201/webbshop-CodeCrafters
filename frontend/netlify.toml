@@ -20,7 +20,7 @@ publish = "public"
 
   [[redirects]]
   from = "*/allProducts-page"
-  to = "*/allProducts-page.html"
+  to = "*/allProductspage.html"
   status = 200
 
    [[redirects]]
