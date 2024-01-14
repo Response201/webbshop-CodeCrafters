@@ -9,15 +9,14 @@ export const Main = async () => {
 
  await openBasket();
  await closeBasket();
-await getProducts()
 const show  = await localStorage.getItem("show");
 if(!show){
-  const myModal = await document.querySelector<HTMLElement>('#myModal')
+  const myModal =  document.querySelector<HTMLElement>('#myModal')
    myModal?.classList.add('show')
   };
 
 
-const yesBtnModal = await document.querySelector<HTMLElement>('#modal-yesButton')
+const yesBtnModal =  document.querySelector<HTMLElement>('#modal-yesButton')
 yesBtnModal?.addEventListener('click', (event:MouseEvent) =>{
 event.preventDefault()
     localStorage.setItem("show", JSON.stringify(true));
