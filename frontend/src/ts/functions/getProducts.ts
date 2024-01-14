@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Product } from "../models/product";
-import { productsfromjson } from "../data/products";
+import { productsfromjson } from "./products";
 
 
 
