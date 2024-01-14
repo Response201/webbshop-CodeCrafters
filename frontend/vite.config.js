@@ -15,8 +15,8 @@ export default defineConfig({
 
 
   pages: {
-    index: 'index.html',
-    about: 'about.html',
+    index: './index.html',
+    about: './about.html',
     // Lägg till andra sidor här efter behov
   },
 
