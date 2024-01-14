@@ -19,7 +19,7 @@ base = "/"
   status = 200
 
   [[redirects]]
-  from = "/allProducts-page"
+  from = "/src/allProducts-page"
   to = "/allProducts-page.html"
   status = 200
 
