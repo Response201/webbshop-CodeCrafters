@@ -7,17 +7,17 @@ publish = "frontend/public"
       Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/index"
+  from = "frontend/index"
   to = "/index.html"
   status = 200
 
 [[redirects]]
-  from = "https://transcendent-lebkuchen-741286.netlify.app/about"
+  from = "frontend/about"
   to = "/about.html"
   status = 200
 
 [[redirects]]
-  from = "https://transcendent-lebkuchen-741286.netlify.app/allProducts-page.html"
+  from = "frontend/allProducts-page.html"
   to = "/allProducts-page.html"
   status = 200
   
