@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build":  " ./src/scss/ && touch ./src/scss/style.css && sass ./src/scss/style.scss ./src/scss/style.css && tsc && vite build ",
+    "build": "mkdir -p ./frontend/scss/ && touch ./frontend/scss/style.css && sass ./frontend/scss/style.scss ./frontend/scss/style.css && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
