@@ -13,6 +13,13 @@ export default defineConfig({
   //   // ...
   // },
 
+
+  pages: {
+    index: 'index.html',
+    about: 'about.html',
+    // Lägg till andra sidor här efter behov
+  },
+
   // Ange om du vill att Vite ska visa en notifiering om fel
   // Mer information: https://vitejs.dev/config/#server-quiet
   server: {
