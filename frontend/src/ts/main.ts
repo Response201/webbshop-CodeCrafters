@@ -5,7 +5,7 @@ import { closeBasket } from "./functions/basketPage/closeBasket";
 import { getProducts } from "./functions/getProducts";
 export const shoppingcart: Product[] = [];
 
-const main = async () => {
+export const Main = async () => {
 
  await openBasket();
  await closeBasket();
@@ -23,4 +23,4 @@ event.preventDefault()
     localStorage.setItem("show", JSON.stringify(true));
   })
 };
-main();
+
