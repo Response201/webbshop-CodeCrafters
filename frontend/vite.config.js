@@ -29,13 +29,22 @@ export default defineConfig({
   // Konfigurera byggnadsutdata
   build: {
     outDir: 'dist', // Byggmappen
-    assetsDir: 'public', // Mappen där assets (till exempel bilder) lagras
+    assetsDir: '', // Mappen där assets (till exempel bilder) lagras
+    sourcemap: false, // Skapa eller inte skapa källkartor
+    
+
 
     rollupOptions: {
       input: {
         main: 'index.html', // Huvud-HTML-fil
         about: 'about.html', // Lägg till andra HTML-filer här
-      },
+      }
+  }
+
+
+
+
+
   },
 
   // Plugins och andra konfigurationer kan läggas till här
