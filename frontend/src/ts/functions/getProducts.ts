@@ -11,7 +11,7 @@ export const getProducts = async () => {
   let Array: Product[] = [];
   
 
-      Array = await productsfromjson;
+      Array = await productsfromjson ;
       
  
   return Array;
