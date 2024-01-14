@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico" href="./public/icon.ico" />
+    <link rel="icon" type="image/ico" href="/public/icon.ico" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -18,11 +19,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/src/scss/style.scss" />
-
-    <link rel="stylesheet" href="/src/scss/_productpage.scss" />
-    <link rel="stylesheet" href="src/scss/_allproducts.scss" />
+    <!-- <link rel="stylesheet" href="/src/scss/style.scss" /> -->
     <link rel="stylesheet" href="/src/scss/style.css" />
+<!--     <link rel="stylesheet" href="/src/scss/_productpage.scss" />
+    <link rel="stylesheet" href="src/scss/_allproducts.scss" /> -->
+    
+
+    <script type="module" src="/src/ts/functions/getProducts.ts"></script>
     <title>Whiskends</title>
   </head>
 
@@ -123,7 +126,7 @@
             </p>
           </section>
           <section class="introductionImage">
-            <img src="public/howitworksimages/pouring_standing.webp" />
+            <img src="./public/howitworksimages/pouring_standing.webp" />
           </section>
         </section>
         <section class="container--subscriptions">
@@ -152,7 +155,7 @@
             </section>
           </section>
           <section class="subscriptionImage">
-            <img src="public/howitworksimages/pouring_wide.webp" />
+            <img src="./public/howitworksimages/pouring_standing.webp" />
           </section>
         </section>
         <section class="container--howItWorks">
@@ -194,7 +197,9 @@
       </section>
     </div>
     <script type="module" src="/src/ts/main.ts"></script>
+    <script type="module" src="/src/ts/functions/getProducts.ts"></script>
     <script type="module" src="/src/ts/allProductsPage/allProducts.ts"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
