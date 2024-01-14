@@ -30,5 +30,6 @@ export const getProducts = async () => {
       console.error("error");
     }
   }
+  await Array
   return Array;
 };

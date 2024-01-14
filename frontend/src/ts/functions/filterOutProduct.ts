@@ -36,7 +36,7 @@ export const filterOutProduct = async (id:string) => {
 
     /* om variablerna oneProduct && twoProduct finns så körs productPage(), 
     produkt sida skapas */
-productPage(oneProduct, twoProduct)
+await productPage(oneProduct, twoProduct)
     }
     }
 }
