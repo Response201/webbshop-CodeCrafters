@@ -6,7 +6,18 @@ publish = "frontend/public"
     [headers.values]
       Access-Control-Allow-Origin = "*"
 
-# _redirects
+[[redirects]]
+  from = "/index"
+  to = "/index.html"
+  status = 200
 
-/index        /index.html     200
-/about        /about.html     200
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/allProducts-page.html"
+  to = "/allProducts-page.html"
+  status = 200
+  
