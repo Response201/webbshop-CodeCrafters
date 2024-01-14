@@ -1,6 +1,6 @@
 
-command = "CI= npm run build"
-publish = "frontend/public"
+command = " npm run build"
+publish = "public"
 base = "/"
 
 [[headers]]
