@@ -17,7 +17,7 @@ var corsOptions = {
 }
 
 const mongoString =
-    process.env.MONGO_URL || 'https://codecrafters-td9j.onrender.com/' || 'https://whiskends.netlify.app';
+    process.env.MONGO_URL || 'https://codecrafters-td9j.onrender.com/' ;
 
     mongoose.connect(mongoString);
     const database = mongoose.connection
