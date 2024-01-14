@@ -10,9 +10,9 @@ export default defineConfig({
     // Ange formatet för JavaScript-moduler
     target: 'esnext',
 
-    export default {
+    
       base: './',
-    }
+    
 
   },
 });
