@@ -14,12 +14,12 @@ publish = "public"
   status = 200
 
 [[redirects]]
-  from = "/about"
+  from = "*/about"
   to = "*/about.html"
   status = 200
 
   [[redirects]]
-  from = "/allProducts-page"
+  from = "*/allProducts-page"
   to = "*/allProducts-page.html"
   status = 200
 
