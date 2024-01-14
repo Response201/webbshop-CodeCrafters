@@ -10,22 +10,22 @@ publish = "public"
 
 [[redirects]]
   from = "/index"
-  to = "/index.html"
+  to = "*/index.html"
   status = 200
 
 [[redirects]]
   from = "/about"
-  to = "/about.html"
+  to = "*/about.html"
   status = 200
 
   [[redirects]]
   from = "/allProducts-page"
-  to = "/allProducts-page.html"
+  to = "*/allProducts-page.html"
   status = 200
 
    [[redirects]]
   from = "/contact"
-  to = "/contact.html"
+  to = "*/contact.html"
   status = 200
 
   
