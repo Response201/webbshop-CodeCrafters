@@ -12,12 +12,12 @@ publish = "frontend/public"
   status = 200
 
 [[redirects]]
-  from = "/about"
+  from = "https://transcendent-lebkuchen-741286.netlify.app/about"
   to = "/about.html"
   status = 200
 
 [[redirects]]
-  from = "/allProducts-page.html"
+  from = "https://transcendent-lebkuchen-741286.netlify.app/allProducts-page.html"
   to = "/allProducts-page.html"
   status = 200
   
