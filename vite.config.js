@@ -8,7 +8,7 @@ export default defineConfig({
    /*  outDir: 'dist', */
 
     // Ange formatet för JavaScript-moduler
-    target: 'esnext',
+    /* target: 'esnext', */
 
     
     /*   base: './' */
