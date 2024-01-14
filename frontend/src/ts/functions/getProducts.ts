@@ -11,7 +11,7 @@ export const getProducts = async () => {
   const url: string = import.meta.env.VITE_URL;
   let Array: Product[] = [];
   try {
-    const { data } = await axios.get<Product[]>(`${url}`, {
+    const { data } = await axios.get<Product[]>(`https://good-jade-iguana-wear.cyclic.app`, {
       timeout: 500,
     });
     if (data.length >= 3) {
