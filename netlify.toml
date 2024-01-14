@@ -7,7 +7,7 @@ publish = "frontend/public"
       Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/"
+  from = "/index"
   to = "/index.html"
   status = 200
 
